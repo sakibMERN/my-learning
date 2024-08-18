@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes pingpong{
+            from{
+                left: 0;
+            }
+            to{
+                left: 500px;
+                background-color: red;
+            }
+        }
+        @keyframes Bounce {
+            0%{
+                top: 0;
+                left: 0;
+                background-color: yellowgreen;
+            }
+            25%{
+                top: 300px;
+                left: 160px;
+                background-color: red;
+            }
+            50%{
+                left: 320px;
+                top: 0;
+                background-color: yellowgreen;
+            }
+            75%{
+                top: 300px;
+                left: 480px;
+                background-color: red;
+            }
+            100%{
+                left: 640px;
+                top: 0;
+                background-color: yellowgreen;
+            }
+        }
+        .stage{
+            width: 800px;
+            height: 400px;
+            border: 3px solid slateblue;
+            background-color: aquamarine;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            position: relative;
+            animation: Bounce 5s linear 2s infinite alternate ;
+            /* animation: pingpong 3s ease-in-out 1s infinite alternate; */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 20px;
+
+        }
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+        }
+        @media screen and (max-width:576px){
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible flex</h2>
+    <!-- Responsive using media query -->
+    <div class="container">
+        <div class="box">
+            <h3>First box</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, velit. Repellendus voluptate necessitatibus quod est maiores, ipsa, porro iusto magni ex, inventore temporibus deserunt! Perferendis magni dignissimos minus illum doloribus? Laudantium maxime obcaecati sapiente dicta similique ipsum saepe quis placeat odit pariatur accusantium consequuntur, culpa aperiam possimus sit. Enim, aperiam?</p>
+        </div>
+        <div class="box">
+            <h3>Second box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aspernatur praesentium, quos amet cupiditate velit nesciunt, incidunt eaque quasi quas impedit. Aspernatur ab vitae sit, dignissimos delectus laborum commodi inventore neque obcaecati itaque quae! Earum incidunt esse reiciendis similique mollitia voluptatem, perferendis tenetur, expedita voluptas corrupti rerum dolorum nobis praesentium?</p>
+        </div>
+    </div>
+    <!-- Responsive using flex wrap  -->
+    <div class="container-2">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+    </div>
+</body>
+</html>

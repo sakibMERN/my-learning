@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Nav Bar</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+      li {
+        float: left;
+        border-bottom: 3px solid rgb(246, 4, 4);
+        border-right: 1px solid white;
+        border-bottom-right-radius: 5px;
+      }
+      li a {
+        display: block;
+        padding: 5px 10px;
+        margin: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+      }
+      li a.active {
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+      }
+      li a:hover:not(.active) {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        font-size: 25px;
+        transition: 0.3s;
+      }
+      /* ul::after{
+      content: "";
+      display: table;
+      clear: both;
+    } */
+
+      input[type="text"]:hover {
+        width: 200px;
+        font-size: 20px;
+        padding: 4px 8px;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        transition: 0.5s;
+      }
+      div.one {
+        text-align: center;
+        background-color: gainsboro;
+        padding-bottom: 10px;
+        
+      }
+      div.one h1 {
+        font-size: 40px;
+      }
+      div.two {
+        background-color: chartreuse;
+        height: 1500px;
+        padding: 130px 230px;
+
+      div.description{
+        display: flex;
+        gap: 20px;
+        
+      }
+
+        /* padding-top: 30px; */
+      }
+      @media screen and (max-width=400px) {
+        li {
+          display: block;
+          float: none;
+        }
+        li a {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <h1>Scroll Down</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, similique!
+      </p>
+    </div>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+
+    <div class="two">
+      <h1>Scroll this page.</h1>
+      <h2>Fixed top navigation bar.</h2>
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sed
+          ipsa velit rem perspiciatis mollitia excepturi, dolorem minus laborum
+          nemo impedit expedita earum molestiae ipsam et repudiandae vitae atque
+          doloribus.
+        </p>
+      </div>
+    </div>
+=
+    
+  </body>
+</html>

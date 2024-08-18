@@ -1,0 +1,26 @@
+      /* style for navigation */
+      nav>ul{
+        display: flex;
+        list-style-type: none;
+        background-color: blueviolet;
+        border-radius: 5px;
+        padding: 0;
+    }
+    nav li{
+        margin-right: 10px;
+        padding: 10px;
+    }
+    nav li a{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: rgb(171, 253, 6);
+      }
+      nav li a:hover{
+        background-color: black;
+        color: white;
+        font-size: 24px;
+        transition: 0.4s;
+      }

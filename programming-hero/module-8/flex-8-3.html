@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 30px;
+      }
+      .from-container{
+        display: flex;
+        border: 1px solid red;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      .login {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+      }
+      input {
+        /* display: block; */
+        font-size: 25px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">About</a>
+      </div>
+      <a href="">Login</a>
+    </nav>
+
+    <div class="from-container">
+      <form class="login">
+        <h1>Login Form</h1>
+        <input type="email" placeholder="Your email" required/>
+        <input type="password" name="" id="" placeholder="Your password" required/>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>

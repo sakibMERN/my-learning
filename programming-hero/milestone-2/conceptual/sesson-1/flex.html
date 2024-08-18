@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .wraper{
+            height: 600px;
+            border: 2px solid tomato;
+            /* padding: 10px; */
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: space-between;
+
+            align-content: center;
+            align-items: center;
+            /* justify-content: space-evenly;
+            align-items: center; */
+        }
+        .wraper div{
+            padding: 10px;
+            margin: 5px;
+            width: 75px;
+        }
+        .item-1{
+            background-color: aqua;
+            order: 1;
+        }
+        .item-2{
+            background-color: yellowgreen;
+            /* align-self: flex-end; */
+            order: 6;
+        }
+        .item-3{
+            background-color: violet;
+            order: 4;
+            
+        }
+        .item-4{
+            background-color: rgb(175, 154, 154);
+            order: 3;
+        }
+        .item-5{
+            background-color: tan;
+            order: 2;
+        }
+        .item-6{
+            background-color: springgreen;
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="item-1">
+            <h3>Box-1</h3>
+        </div>
+        <div class="item-2">
+            <h3>Box-2</h3>
+        </div>
+        <div class="item-3">
+            <h3>Box-3</h3>
+        </div>
+        <div class="item-4">
+            <h3>Box-4</h3>
+        </div>
+        <div class="item-5">
+            <h3>Box-5</h3>
+        </div>
+        <div class="item-6">
+            <h3>Box-6</h3>
+        </div>
+        <div class="item-1">
+            <h3>Box-7</h3>
+        </div>
+        <div class="item-2">
+            <h3>Box-8</h3>
+        </div>
+        <div class="item-3">
+            <h3>Box-9</h3>
+        </div>
+        <div class="item-4">
+            <h3>Box-10</h3>
+        </div>
+        <div class="item-5">
+            <h3>Box-11</h3>
+        </div>
+        <div class="item-6">
+            <h3>Box-12</h3>
+        </div>
+    </div>
+</body>
+</html>

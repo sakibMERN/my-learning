@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max width</title>
+    <style>
+        div{
+            background-color: slateblue;
+            height: 500px;
+        }
+        @media screen and (max-width:1200px) {
+            div{
+                background-color: rgb(166, 255, 0);
+            }
+        }
+        @media screen and (max-width:900px) {
+            div{
+                background-color: rgb(255, 179, 0);
+            }
+        }
+        @media screen and (max-width:500px) {
+            div{
+                background-color: red;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <h2>when you use max-width , you should flow the flow of media query. the order of max-width is "High to Low"</h2>
+    </div>
+</body>
+</html>

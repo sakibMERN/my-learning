@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<style>
+    input[type="text"]{
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        font-size: 20px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #f60909;
+        border-radius: 6px;
+        background-color: darkslateblue;
+        color: white;
+    }
+    input[type="submit"]{
+        width: 100%;
+        padding: 5px 0;
+        margin-top: 8px;
+        background-color: rgb(132, 204, 23);
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover{
+        background-color: green;
+    }
+    div{
+        background-color: #d8d3d3;
+        padding: 12px;
+        border-radius: 6px;
+    }
+</style>
+</head>
+<body>
+    <h2>Padding input field</h2>
+    <div>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" placeholder="Type your name..">
+
+        <label for="lname">Last name</label>
+        <input type="text" placeholder="Type your last name..">
+        <input type="submit">
+    </div>
+</body>
+</html>
