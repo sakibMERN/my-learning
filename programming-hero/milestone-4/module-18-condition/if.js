@@ -21,3 +21,22 @@ if (price <= 10) {
 } else {
     console.log('the price is too high.');
 }
+
+
+/***
+ * Child allowance
+ * 
+ */
+
+let jobDone = true;
+
+let allowance ;
+
+if ( jobDone === true) {
+    allowance = 10;
+    console.log(allowance);
+}
+else {
+    allowance = 5;
+    console.log(allowance);
+}
