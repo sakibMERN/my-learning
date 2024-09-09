@@ -16,10 +16,10 @@ function square (num){
     // console.log(num);
 
 }
-square(10);
-square(5);
-square(12);
-square(15);
+// square(10);
+// square(5);
+// square(12);
+// square(15);
 
 
 function add(num1, num2, num3) {
@@ -27,14 +27,14 @@ function add(num1, num2, num3) {
     console.log(sum);
 }
 
-add(25, 10, 5);
+// add(25, 10, 5);
 
 function addAll (a, b, c, d) {
     const total = a + b + c + d;
     console.log(total);
 }
 
-addAll(5, 43, 34, 3); //58
+// addAll(5, 43, 34, 3); //58
 
 //**If i don't give a argument  */
 function addAll (a, b, c, d) {
@@ -43,3 +43,11 @@ function addAll (a, b, c, d) {
 }
 
 addAll(5, 43, 34); //NaN
+
+function add(a){
+    if(typeof a === undefined){
+        console.log("got ist");
+    }
+}
+
+add();
