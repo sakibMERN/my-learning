@@ -27,7 +27,7 @@ console.log(Math.abs(50-10));
 /**
  * Math.round()==>> কোনও দশমিক যুক্ত সংখ্যাকে পূর্ণ সংখ্যায় রুপান্তরিত করে।।
  */
-console.log(Math.round(4.4));  //৪
+console.log(Math.round(4.4));  //4
 console.log(Math.round(5.5));  //6
 console.log(Math.round(6.9));  //7
 

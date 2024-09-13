@@ -45,3 +45,15 @@ for(let i = 0; i < numbers.length; i++){
 /**using reverse method on a string array */
 const friends = ['bill', 'mark', 'jef', 'mask'];
 console.log(friends.reverse());
+
+//You can reverse each word by this method=====>>>>>>>>>
+
+const sentence = "I love bangladesh";
+
+function reverseSentence(sentence){
+    let newArray = sentence.split("");
+    let reverse = newArray.reverse();
+    let reverseSentence = reverse.join("");
+    console.log(reverseSentence);
+}
+console.log(reverseSentence(sentence));
