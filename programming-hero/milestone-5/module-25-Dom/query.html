@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <style>
+        .fruits-container li{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam alias corporis consequuntur natus quos odit rem, quae eligendi aut eveniet quas magnam ab minima laborum reprehenderit eius, architecto esse!</p>
+    </header>
+    <main>
+        <section>
+            <h1>My Awesome DOM de baba.</h1>
+
+            <ul>
+                <li>Sakib</li>
+                <li>Hanif</li>
+                <li>Kuddus</li>
+                <li>Masud</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits I like.</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Lichi</li>
+                <li>Tomato</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Sundorban</li>
+                <li class="important-places">KataBan</li>
+                <li class="important-places">bandarban</li>
+                <li>shalban</li>
+            </ul>
+        </section>
+        <section>
+            <div>
+                <p class="paragraph">First paragraph</p>
+                <p class="paragraph">Second paragraph</p>
+                <p class="paragraph">Third paragraph</p>
+              </div>
+        </section>
+    </main>
+    <script>
+        //query selector All
+        const someLi = document.querySelectorAll('.fruits-container li');
+        console.log(someLi);
+        for(const fruit of someLi){
+            console.log(fruit.innerText);
+        }
+
+        //query selector (first element)
+
+    </script>
+</body>
+</html>
+

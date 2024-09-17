@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class vs Id in Dom</title>
+    <style>
+        .important-places{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam alias corporis consequuntur natus quos odit rem, quae eligendi aut eveniet quas magnam ab minima laborum reprehenderit eius, architecto esse!</p>
+    </header>
+    <main>
+        <section>
+            <h1>My Awesome DOM de baba.</h1>
+
+            <ul>
+                <li>Sakib</li>
+                <li>Hanif</li>
+                <li>Kuddus</li>
+                <li>Masud</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like.</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Lichi</li>
+                <li>Tomato</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I like to visit</h1>
+            <ul>
+                <li class="important-places">Sundorban</li>
+                <li class="important-places">KataBan</li>
+                <li class="important-places">bandarban</li>
+                <li>shalban</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // IF you want to get one specific element .
+        /*You have to use "getElementById" not "Elements". 
+        because you just select one element.
+        */
+        const importantPlace = document.getElementById("places-title");
+        console.log(importantPlace);
+        importantPlace.innerText = "I love Bangladesh."; 
+
+        // IF you want to get more than one specific element .
+        /*You have to use "getElementsById" not "Element". 
+        because you not just select one element. you have to select more than one element.
+        */
+
+        const places = document.getElementsByClassName('important-places'); 
+        console.log(places);
+        
+        //document.getElementsById() provide you an array like result. that's why you can use 'for of ' loop over the array.
+        for(const place of places){
+            console.log(place.innerText);
+        }
+    </script>
+</body>
+</html>
