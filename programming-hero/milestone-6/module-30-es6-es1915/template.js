@@ -54,3 +54,12 @@ for the
 job` // this doesn't give you error
 
 // console.log(message);
+
+//Old way
+const multiLine = "1.First \n2. Second";
+console.log(multiLine);
+
+//ES6 WAY
+const newMultiline = `1. Third
+2. Fourth`;
+console.log(newMultiline);

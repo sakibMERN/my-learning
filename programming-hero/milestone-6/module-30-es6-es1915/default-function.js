@@ -7,7 +7,7 @@ function add(num1, num2){
 // const sum = add(5, 7);
 // console.log(sum);  // 5 + 7 = 12;
 
-// const sum = add(5);  
+const sum = add(5);  
 // console.log(sum);  // 5 + undefined = NaN;
 
 // const sum = add( , 6); //expression error
@@ -22,8 +22,8 @@ function add1(num1 = 99, num2 = 0){
     return result;
 }
 
-// const total = add1(5)
-// console.log(total); // 5+0 = 5;
+const total1 = add1(5)
+console.log(total1); // 5+0 = 5;
 
 // const total = add1(4,2);
 // console.log(total); // 4 + 2 = 6;

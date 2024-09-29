@@ -23,3 +23,6 @@ const oddChar = friends.filter(f => f.length % 2 === 1);
 const oddFriend = friends.filter(f => f.length > 4);
 // console.log(oddFriend); //[ 'mikel', 'oliver' ]
 
+const nums = [1,2,3,4,5];
+let output = nums.filter(n => n%2);
+// console.log(output); [1, 3, 5]

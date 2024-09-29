@@ -6,6 +6,7 @@ const result2 = numbers.forEach(n => n * 2);
 const result3 = numbers.forEach(n => {
     
 })
+
 /**
  * expected result
  *  1

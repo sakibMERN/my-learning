@@ -43,3 +43,13 @@ function  doubleThem(a, b){
 const [prothom , ditiyo] = doubleThem(6,9);
 
 console.log(prothom, ditiyo); //12 18
+
+const person = {
+    nam: "Ananta", 
+    age: 25, 
+    favoriteFood: "Rice",
+
+};
+const { nam , ...rest} = person;
+
+console.log(nam); //Ananta
