@@ -1,34 +1,33 @@
-const names = ['abdul kasem', 'kuddus mia', 'mobarok hossain'];
+// const names = ['abdul kasem', 'kuddus mia', 'mokabber hosain'];
 
-const name1 = names[0];
-const name2 = names[1];
-const name3 = names[2];
-// console.log(name2); //kuddus mia
+// const name1 = names[0];
+// const name2 = names[1];
+// const name3 = names[2];
 
-//***You can get it more easier way to use array destructuring */
+// console.log(name2); //mokabber hosain
 
-const [x, y, z] = ['abdul kasem', 'kuddus mia', 'mobarok hossain'];
-console.log(x); //abdul kasem
-console.log(y); //kuddus mia
-console.log(z); //mobarok hossain
-//Note: You have to maintain the index sequence.
+//we can make this things more easy using array destructuring.
 
-const [a] = ['abdul kasem', 'kuddus mia', 'mobarok hossain'];
+const names = ['abdul kasem', 'kuddus mia', 'mokabber hosain'];
 
-console.log(a); //abdul kasem
-//you can set any times of variable. your variables are work accordingly. 
+// const [x, y, z] = names;
+// console.log(x); //abdul kasem
+// console.log(y); //kuddus mia
+// console.log(z); //mokabber hosain
 
-const [b, c, d, e, f] = ['abdul kasem', 'kuddus mia', 'mobarok hossain'];
-console.log(b); //abdul kasem
-console.log(f); //undefined
-//Note: if your variable value doesn't exist, you get the result undefined.
+//Note: you have to maintain sequence when you use array destructuring.
 
+// const [x] = names;
+// console.log(x); //abdul kasem
 
-const [aa, _, cc] = ['abdul kasem', 'kuddus mia', 'mobarok hossain'];
+//if you want to skip any sequence of this . you have to use comma(,) or underscore(_).
+// const [x, ,z] = names;
+// console.log(x); //abdul kasem
+// console.log(z); //mokabber hosain
 
-console.log(aa, cc); //mobarok hossain
-//Note: You can skip any variable to use "_ " or ",".
+// const [_, y,__] = names;
+// console.log(y); //kuddus mia
+//Note: we can't use single underscore in two times. because here underscore behavior is like a variable. and javascript doesn't accept same variable. so we have to use different one.
 
-//You can skip more than one.
-const [, , ccc] = ['abdul kasem', 'kuddus mia', 'mobarok hossain'];
-console.log(ccc); //mobarok hossain
+const [ , , z] = names;
+console.log(z); //mokabber hosain

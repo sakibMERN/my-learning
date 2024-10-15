@@ -1,91 +1,82 @@
-/**
- * There are three types of variable
- * 1. global scope
- * 2. block scope
- * 3. functional scope
- */
+// there are three types of scope
+//1. global scope
+//2. block scope (let, const follow block scope rule)
+//3. functional scope
 
-//Global scope
-// const x = 5;
+/**Global scope */
 
-// console.log(x);
+// const x = 5; //we declare x = 5 globally.
+// console.log(x); //5
 
 // if(true){
-//     console.log(x);
+//     // console.log(x); //5
 // }
 
 // function show(){
-//     console.log(x);
+//     // console.log(x); //5
 // }
-
 // show();
 
-//Block scope
+// ===>>>
+
+/**Block scope */
 
 // {
-//     let x = 5;
-//     console.log(x);
+//     let x =7;
+//     // console.log(x);
 // }
+// console.log(x); //x is not defined
 
-// console.log(x);
+//Note: a block scope variable doesn't work outside of his block
 
-// const x = 5;
+// ===>>>
+
+// const x = 10;
 
 // const x = 10;
 // console.log(x); //SyntaxError: Identifier 'x' has already been declared
 
-// const x = 5;
+// =====>>>>
 
-// x = 10;
-// console.log(x); //TypeError: Assignment to constant variable.
-
-// const x = 5; 
-
-
-{
-    // console.log(x); //5
-    //Note: If you declared a variable globally. and the call it in a block . it will be work. if another variable has been declared inside block.
-}
-
-//another example
-// const x = 5;
-{
-    // const  x =10;
-    // console.log(x); //10
-}
-// console.log(x); //5
-
-
-//another example using var
-{
-    // var x =10;
-    // console.log(x); //10
-}
+// {
+//     let x = 11;
+//     console.log(x); //11
+// }
 // console.log(x); //10
-//Note: if you declare a variable inside a block scope using "var" , you can access it globally.
 
+//Note: you can redeclare a same name variable inside a block ones.
 
-/**Function scope */
+// =====>>>
+
+//when use "var" as a block scope variable , It can't be a block scope. It make the variable globally.
+// {
+//     var a = "Bangladesh"
+//     console.log(a); //bangladesh
+// }
+
+// console.log(a); //bangladesh
+
+// Note: Here var can use globally 
+
+// ==>>>
+
+/**Functional scope */
 
 // function show(){
-//     const x = 5;
-//     console.log(x);
+//     var x = 5;
+//     console.log(x); //x
 // }
 // show();
-// console.log(x);
-
-// function show1(){
-//     var x = 10;
-//     console.log(x);
-// }
-// show1(); //10
 // console.log(x); //ReferenceError: x is not defined
-//Note: If you declare a variable inside a function using "var". It couldn't access outside of the function. Because it just work when the function run.
 
-// function show3(){
-//     x = 15;
-//     console.log(x); //15
-// }
-// show3(); 
-// console.log(x); //15
-//Note: if you declared a value without variable name. it goes to a global variable.
+// Note: var can't access outside of functional scope.
+
+// ===>>>>
+function show(){
+    x = 5;
+    console.log(x); //5
+}
+show();
+console.log(x); //5
+
+// Note: If you declare any variable without using "var, let or const", you can access is globally . (BUT you never use this) 
