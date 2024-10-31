@@ -1,0 +1,9 @@
+.post{
+    border: 2px solid salmon;
+    
+    padding: 14px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
