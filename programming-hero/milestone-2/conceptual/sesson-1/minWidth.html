@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min width</title>
+    <style>
+        div{
+            background-color: red;
+            height: 500px;
+        }
+        h2{
+            font-size: 6vw;
+        }
+
+        @media screen and (min-width:500px) {
+            div{
+                background-color: yellow;
+            }
+        }
+
+        @media screen and (min-width:900px) {
+            div{
+                background-color: rgb(51, 255, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>when you use min width , you should flow the flow of media query. the order of min-width is "Low to High"</h2>
+    </div>
+</body>
+</html>

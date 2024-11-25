@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable & Calc</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --font-size: 50px;
+        }
+        .menu{
+            color: var(--primary-color);
+            font-size: var(--font-size);
+        }
+        .main-description{
+            background-color: var(--primary-color);
+        }
+        .box{
+            border: 3px solid var(--primary-color);
+        }
+        .title{
+            color: var(--primary-color);
+        }
+        .description{
+            background-color: var(--primary-color);
+        }
+        .extra{
+            color: var(--primary-color);
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+        .header{
+            width: 200px;
+            background-color: slateblue;
+        }
+        .main{
+            /* width: calc(100% -300px); */
+            background-color: olive;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="menu">This is my heading.</h1>
+    <p class="main-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos eius pariatur adipisci exercitationem hic placeat consequatur voluptate tenetur minus vitae labore, optio architecto quaerat autem harum aliquam culpa doloremque.</p>
+    <div class="box">
+        <h3 class="title">This is my box</h3>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. In perferendis nemo unde quisquam molestiae autem, quasi neque saepe, enim delectus provident voluptatem qui modi dolorem laudantium quidem natus sint possimus ex praesentium. Fuga eum consequuntur facilis quam atque itaque similique temporibus magni mollitia a commodi at exercitationem esse reiciendis laboriosam, fugiat, suscipit debitis nesciunt ex autem iste veniam eaque expedita cupiditate? Atque cupiditate rerum reprehenderit accusamus magnam vel quas temporibus similique corporis? Ex amet omnis quis placeat itaque ut facere. Culpa fugit adipisci officiis odit, doloremque asperiores debitis sint et libero aspernatur, cumque error perferendis omnis sit officia facilis tempore?</p>
+
+    </div>
+    <p class="extra">This is my new website</p>
+    <div class="container">
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+        <div class="main">
+            <h2>Main</h2>
+        </div>
+    </div>
+</body>
+</html>

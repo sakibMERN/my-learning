@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice DOM</title>
+</head>
+<body>
+    <h1>I am practicing Dom.</h1>
+    <button id="light">Light mode</button>
+    <button id="dark">Dark Mode</button>
+
+    <script>
+        //light mode
+        const lightMode = document.getElementById("light");
+        lightMode.addEventListener("click", function(){
+            document.body.style.backgroundColor = "yellowGreen"
+        });
+
+        //dark mode 
+        const darkMode = document.getElementById("dark");
+        darkMode.addEventListener("click", function (){
+            document.body.style.color = "white";
+            document.body.style.backgroundColor = "black";
+        })
+    </script>
+</body>
+</html>

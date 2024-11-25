@@ -1,0 +1,28 @@
+header.main{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li{
+    display: inline;
+    padding-left: 15px;
+    margin-left: 10px;
+
+}
+nav li a{
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+
+}

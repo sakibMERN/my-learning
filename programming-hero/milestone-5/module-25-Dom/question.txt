@@ -1,0 +1,3 @@
+What is the difference between "node list" and "HTML collections" ?
+
+Answer ===>>> An HTMLCollection is a collection of document elements. A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes). HTMLCollection items can be accessed by their name, id, or index number. NodeList items can only be accessed by their index number.

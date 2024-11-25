@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLCollections and NodeList difference</title>
+</head>
+<body>
+
+    <!-- Example with HTMLCollections -->
+    <div>
+        <p class="paragraph">First paragraph</p>
+        <p class="paragraph">Second paragraph</p>
+        <p class="paragraph">Third paragraph</p>
+      </div>
+      <script>
+        //getElementsByClassName will return an HTML collection
+        const paragraphs = document.getElementsByClassName('paragraph');
+        console.log(paragraphs);
+
+        //use the index to ger the first paragraph
+        let firstParagraph = paragraphs[0];
+        console.log(firstParagraph.innerText);
+
+        //use the length property
+        console.log(paragraphs.length);
+      </script>
+</body>
+</html>

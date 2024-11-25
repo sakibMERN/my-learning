@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <script src="https://kit.fontawesome.com/e7d365f835.js" crossorigin="anonymous"></script>
+    <style>
+        h1::after{
+            content: ".pdf";
+            font-size: 50px;
+        }
+        h1::before{
+            content: "Start ";
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            text-transform: uppercase;
+        }
+        p::selection{
+            background-color: aquamarine;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <button>Contact me</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolore ipsum repellendus culpa iste reiciendis animi, sapiente magni commodi delectus dolorum quae molestias cupiditate tempora maiores neque labore ad voluptatem nihil deleniti quo corporis quia aliquid. Dicta dignissimos, dolorem, itaque rerum atque consequuntur cumque iure deserunt rem neque necessitatibus quibusdam!</p>
+    <p>Tempore doloremque ex et alias dignissimos quo soluta ipsam odit aliquam. Temporibus odit quisquam aspernatur facilis, voluptatem laborum, esse quis quae enim officiis sint quos ipsa excepturi totam reiciendis molestias facere alias, libero minus quaerat voluptas asperiores obcaecati? Dicta ipsam ducimus atque veniam tempora sunt quidem expedita quae minima minus!</p>
+    <p>Beatae et laudantium dolore eius eos nam sequi, cupiditate, molestiae, illum nihil adipisci libero quis ex deserunt! Mollitia culpa doloribus dolorum quia vero explicabo dignissimos aliquid incidunt, repellendus assumenda temporibus ex aspernatur inventore voluptates enim nesciunt autem doloremque? Cum error accusantium atque perspiciatis ratione ducimus quidem inventore totam nisi provident.</p>
+    <button onclick="getDiscount()">Get discount cupon</button>
+    <script>
+        function getDiscount(){
+            alert("Your promo code is : 5885")
+        }
+    </script>
+</body>
+</html>
